@@ -54,13 +54,13 @@ Game Scenario
 
 ## Class Diagram
 
->Explain your class Diagram
+>For My Class Diagram, The Parent class is Events, which has a has a relationship with the GameTimer class all other event classes inherit from the event class. The other main class is the player control class which is gives inheritance to the score class. Finally there is the RetryMenu class that has the functions for queing for a rematch if the player desires
 
 [Class Diagram](images/Monochrome%20Class%20Diagram.jpg "Monochrome Class Diagram")  
 
 ## Sequence Diagram
 
->Explain your class Diagram
+>The sequence diagram mainly focuses on all aspects tied to the player controls, like health, score and accuracy. This shows interaction between the game, user, and game data files to allows the program to function and to see what information it needs to be playable.
 
 [Sequence Diagram](images/Sequence%20diagram%20Monochrome.jpeg "Monochrome Sequence Diagram")  
 
