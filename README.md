@@ -40,13 +40,13 @@ Game Scenario
 
 >Explain your class Diagram
 
-`Link your Class diagram here`  
+[Class Diagram](images/Monochrome%20Class%20Diagram.jpg "Monochrome Class Diagram")  
 
 ## Sequence Diagram
 
 >Explain your class Diagram
 
-`Link your Sequence diagram here`  
+[Sequence Diagram](images/Monochrome%20Sequence%20Diagram.jpeg "Monochrome Sequence Diagram")  
 
 ## Other Resources
 
