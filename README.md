@@ -15,7 +15,7 @@ Game Scenario
 		For this project, I will be focussing on the gameplay of a specific song. “Monochrome”, composed by Adam McHummus, it is the third and final song in the second level of the mod where the player faces Gold. Gold is the user’s character in the first section of Silver, the game's second level. After dying at the end of the song “Frostbite”, he comes back as a corpse, possessed by an unknown force, having lost all his limbs, his eyes and covered in his own blood, now turned black from decay. I’ve chosen this score as it has one of the most challenging mechanics in the mod and is widely considered by many to be the hardest section of the entire game. “Monochrome” stands to be, to this day, the only song I personally have not completed in Hypnos’s Lullaby even after over 100 separate tries. This is because of the song's main mechanic. During many of Gold’s sections, text will appear on the screen, written in a very cryptic and hard to read font. The player must be able to decode the message and type it into the game before Gold finishes singing. If the user fails to do so, gold disappears into the darkness and the player is forced to start the song all over again. What makes this especially hard is the fact that there are over 50 different random message combinations and, since the mod was cancelled right before release, special characters such as exclamation points and interrogation points are simply impossible to input as this feature was never coded into the game. With this monstrous gameplay mechanics, the creators also implemented jump scares which will queue at set times during the score, obscuring the screen for a moment. Finally, a dead Pokémon appears three times throughout the song, each time, reducing the player’s max HP by 20%. “Monochrome” is one of the few two-phase songs in this mod, where, in the middle of the song, Gold says “No More”, two small red eyes then appear from inside his skull, visible through his empty eye sockets, followed by the unknown force taking possession of his head and tearing it off his torso, his spine going with it. From this point one, the chart becomes significantly more difficult and jump scares happen much more frequently.
 
 
-`Link Images here`
+
 
 ## User Story
 
@@ -32,7 +32,23 @@ Game Scenario
 
 ## Flowchart Diagram
 
->Explain your class Flowchart
+>The game will first Load in the level and then will next play an audio que paired with subtitles followed by an animation of the enemy appearing into frame. Now in the play area of the game, the user will be given their controls to activate their arrow hitboxes and the music will start. A timer will start, invisible to the player, which will trigger specific scripted instances when time thresh holds are met and will determine the player’s victory if the user is still alive when the time expires. These scripted instances include Jumpscare Event, Celebi Event, Typing Event, Phase2 Event and note spawning. 
+
+### NOTE SPAWNING 
+	Note spawning is a reoccurring event which will spawn the chart that the player must complete. During this time, the enemy character will constantly loop through an idle animation while they aren’t in motion. As the notes pass by, the player will be expected to activate them before they arrive at another hitbox which automatically destroys them. Depending on if the note is destroyed by the player or by the automatic hitbox, the game will determine if it is a miss or not. If it is a successful activation, the game will play a success animation using the player’s character, although in Monochrome, the player’s model isn’t on screen. After this, it assigns points to the player depending on how accurate the game calculates they were and, if their HP isn’t full, increases it by a set amount and loops back to the play section. If the game determines that the user missed the note, a miss animation is queued and the miss counter at the bottom of the screen is increased by 1. The users HP is then reduced by a fixed amount. The game will next check if the player’s HP has dipped to 0, if so, the game ends and they are brought to a retry menu, if not, it loops back to the play section.
+
+### JUMPSCARE EVENT
+	This process happens when the countdown reaches set times throughout the song. When this happens, a translucent image of Gold’s face is transposed over the user’s gameplay for a short amount of time, accompanied by a sound effect, before it disappears and the process ends.
+
+### CELEBI EVENT
+	This event is also scripted to happen when the in-game timer reaches certain timestamps. This event happens exactly 3 time. When triggered, an animation of the Pokémon Celebi emerging from the dark background will play with subtitles “I’m dead” that will appear at the bottom of the screen. When this happens, the user’s max health will permanently be reduced by 20%, stacking each time for a grand total of a 60% max hp loss by the third trigger of the event. Following this, the process will end and return to the Play state.
+
+### TYPING EVENT
+	This is a scripted event that takes place at certain time intervals. When the event is active, a red screen appears with a word spelt out in a hard to read font. An invisible timer starts counting down. The player will then retype the word displayed. Failure to do so within the timer’s given time will cause the game to play an animation then move the user to the retry menu, else the process will redirect the player back to Play.
+
+### PHASE2 EVENT
+	This Event happens once and is scripted. Once the event starts, it plays a 10 second long animation where Gold’s head is pulled off his shoulders. Subtext “No More” is displayed and then all of Golds animations are updated to new ones to display his new state.
+
 
 [Flowchart](images/Monochrome%20flowchart.jpg "Monochrome Flowchart")
 
