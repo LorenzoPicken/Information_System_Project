@@ -68,7 +68,7 @@ Game Scenario
 
 >Gameplay Example:
 
-[Gameplay](images/MonochromeGameplay.png "Gameplay")
+[Gameplay](images/MonochromeGame.png "Gameplay")
 
 ## Github
 
