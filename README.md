@@ -46,7 +46,7 @@ Game Scenario
 
 >Explain your class Diagram
 
-[Sequence Diagram](images/Monochrome%20Sequence%20Diagram.jpeg "Monochrome Sequence Diagram")  
+[Sequence Diagram](images/Sequence%20diagram%20Monochrome.jpeg "Monochrome Sequence Diagram")  
 
 ## Other Resources
 
