@@ -72,4 +72,4 @@ Game Scenario
 
 ## Github
 
-- Github link for your repositor here  
+- https://github.com/LorenzoPicken/Information_System_Project.git 
