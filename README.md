@@ -34,7 +34,7 @@ Game Scenario
 
 >Explain your class Flowchart
 
-![Monochrome Flowchart](/Monochrome%20flowchart.jpg)
+[Flowchart](images/Monochrome%20flowchart.jpg "Monochrome Flowchart")
 
 ## Class Diagram
 
